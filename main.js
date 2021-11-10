@@ -9,7 +9,7 @@ function showVerticalMessage(str) {
   for (let char of str) {
     result += char + '\n';
   }
-  return result.trim();
+  console.log(result.trim());
 }
 
-console.log(showVerticalMessage('марафон'));
+showVerticalMessage('марафон');
