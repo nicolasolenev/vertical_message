@@ -12,4 +12,4 @@ function showVerticalMessage(str) {
   console.log(result.trim());
 }
 
-showVerticalMessage('марафон');
+showVerticalMessage('марафон   очень крутой!');
