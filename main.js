@@ -1,15 +1,9 @@
 function showVerticalMessage(str) {
-  let result = '';
-  if (str.length > 10) {
-    str = str.slice(0, 10);
+  let result = str.slice(0, 10);
+  if (result.startsWith('м')) {
+    result = result[0].toUpperCase() + result.slice(1);
   }
-  if (str[0] === 'м') {
-    str = str[0].toUpperCase() + str.slice(1);
+  for (let char of result) {
+    console.log(char);
   }
-  for (let char of str) {
-    result += char + '\n';
-  }
-  console.log(result.trim());
 }
-
-showVerticalMessage('марафон   очень крутой!');
